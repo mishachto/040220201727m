@@ -1,0 +1,23 @@
+.button-default {
+  max-width: 276px;
+  width: 100%;
+  border: $color-button 2px solid;
+  line-height: 43px;
+  background: $color-button;
+  border-radius: 23px;
+  font-weight: bold;
+  font-size: 16px;
+  margin: auto;
+  outline: none !important;
+  transition: 0.5s;
+  color: $color-first;
+  &:hover {
+    transition: 0.5s;
+    background: transparent;
+  }
+  &:disabled {
+    background: transparent;
+    border-color: $color-second;
+    transition: 0.5s;
+  }
+}

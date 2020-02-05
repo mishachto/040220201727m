@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stok</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-info-user">
+            <div class="box-info-user-img">
+                <img src="./images/user.png" alt="">
+            </div>
+            <div class="box-info-user-name">
+                <div class="name">
+                    Вероника Pостова
+                </div>
+                <div class="specialty">
+                    Менеджер по продажам
+                </div>
+            </div>
+            <div class="offer">
+                <span> Подберу для вас самые лучшие предложения. Мои услуги абсолютно бесплатны</span>
+            </div>
+        </div>
+        <div class="box-service-user">
+            <span class="service">Услуг</span>
+            <div class="box-service-user-progress">
+                <div class="box-progress">
+                    <div class="progress"><span class="progress-text">Ручное бронирование</span><span
+                            class="progress-background"></span></div>
+                    <div class="numder"><span>11</span></div>
+                </div>
+                <div class="box-progress">
+                    <div class="progress"><span class="progress-text">Пакетные туры</span><span
+                            class="progress-background bg-blue" style="width: 20%;"></span></div>
+                    <div class="numder"><span>3</span></div>
+                </div>
+                <div class="box-progress">
+                    <div class="progress"><span class="progress-text">Отели</span><span
+                            class="progress-background bg-blue" style="width: 10%"></span></div>
+                    <div class="numder"><span>1</span></div>
+                </div>
+            </div>
+            <div class="total">
+                <span>
+                    Всего
+                </span>
+                <span>
+                    15
+                </span>
+            </div>
+        </div>
+        <div class="box-reviews-user">
+            <div class="box-reviews-user-last">
+                <div class="box-last">
+                    <span class="last">Последние отзывы</span>
+                    <div class="all"><a href="#">Все отзывы</a></div>
+                </div>
+                <div class="d-flex">
+                    <div class="icon"><i class="fas fa-heart"></i><span>131</span></div>
+                    <div class="icon"><i class="fas fa-comment-alt"></i><span>14</span></div>
+                </div>
+            </div>
+            <div class="box-reviews-user-review">
+                <div class="comment">
+                    <div class="info">
+                        <span class="name">Самуил</span><span class="date">13 октября 2011</span>
+                    </div>
+                    <div class="content"><span>Привет, Верунь! ниче себе ты крутая.</span></div>
+                </div>
+                <div class="comment">
+                    <div class="info">
+                        <span class="name">Лилия Семёновна</span><span class="date">14 октября 2011</span>
+                    </div>
+                    <div class="content">
+                        <span>
+                            Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно
+                            стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и
+                            торговли бриллиантами?
+                        </span>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="info">
+                        <span class="name">Лилия Семёновна</span><span class="date">14 октября 2011</span>
+                    </div>
+                    <div class="content">
+                        <span>
+                            Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно
+                            стабилизирует кинетический момент?
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container container-text">
+        <textarea class="text-review" name="" id="text-review"></textarea>
+        <button disabled class="button-default" id="button-text-review" onclick="addPost()">Написать консультанту</button>
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script defer src="js/script.js"></script>
+</html>

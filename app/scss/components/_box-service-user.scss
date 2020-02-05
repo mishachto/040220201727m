@@ -1,0 +1,65 @@
+.box-service-user {
+  margin-left: 135px;
+  @include max-screen(482px) {
+    margin-left: 0;
+  }
+  .service {
+    font-size: 13px;
+    line-height: 15px;
+    margin-bottom: 7px;
+    color: $color-first;
+    display: block;
+    text-align: end;
+  }
+  &-progress {
+    padding: 15px 40px 15px 0;
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+    .box-progress {
+      display: flex;
+      margin-bottom: 2px;
+      .progress {
+        width: 100%;
+        position: relative;
+        border-left: 1px solid $color-border;
+        &-text {
+          padding-left: 6px;
+          color: $color-first;
+          font-size: 13px;
+          line-height: 24px;
+          position: relative;
+          z-index: 1;
+        }
+        &-background {
+          position: absolute;
+          height: 100%;
+          width: 70%;
+          left: 0;
+          background-color: $color-fourth;
+          z-index: 0;
+          border-radius: 0px 3px 3px 0px;
+          &.bg-blue {
+            background-color: $color-five;
+          }
+        }
+      }
+      .numder {
+        text-align: right;
+        width: 40px;
+        flex-shrink: 0;
+        span {
+          font-weight: bold;
+          color: $color-first;
+        }
+      }
+    }
+  }
+  .total {
+    padding: 15px 40px 15px 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 16px;
+    color: $color-first;
+  }
+}
